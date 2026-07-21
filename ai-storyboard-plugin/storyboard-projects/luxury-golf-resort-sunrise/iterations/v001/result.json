@@ -1,0 +1,8 @@
+{
+  "iteration": "v001",
+  "contact_sheet_path": "iterations/v001/contact-sheet.png",
+  "image_reference": "C:\\KORE\\TwoCircles-AI-Storyboard\\ai-storyboard-plugin\\storyboard-projects\\luxury-golf-resort-sunrise\\iterations\\v001\\contact-sheet.png",
+  "settings": {"aspect_ratio": "16:9", "layout": "3x2 contact sheet", "style": "photorealistic premium commercial realism", "frame_count": 6},
+  "validation_result": "passed visual continuity review: six distinct panels, sunrise palette, one golfer and one caddie, wide-to-intimate progression",
+  "generated_at": "2026-07-21T20:00:00Z"
+}

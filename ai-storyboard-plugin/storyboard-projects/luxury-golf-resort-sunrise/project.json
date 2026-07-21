@@ -1,0 +1,517 @@
+﻿{
+    "project_id":  "luxury-golf-resort-sunrise",
+    "storyboard_id":  "storyboard-luxury-golf-resort-sunrise",
+    "title":  "Luxury Golf Resort â€” Sunrise Pitch Frames",
+    "schema_version":  "0.1.0",
+    "status":  "generated",
+    "status_values":  [
+                          "proposed",
+                          "planned",
+                          "review",
+                          "generated",
+                          "refined",
+                          "committed"
+                      ],
+    "active_version":  1,
+    "review_decision_values":  [
+                                   "pending",
+                                   "approved",
+                                   "bypassed"
+                               ],
+    "review":  {
+                   "decision":  "approved",
+                   "plan_version":  1,
+                   "authorized_for_generation":  true,
+                   "reviewed_at":  "2026-07-21T20:00:00Z",
+                   "change_summary":  "User approved plan v001; generation completed."
+               },
+    "story":  {
+                  "creative_intent":  "Pitch frames for a luxury golf resort advertisement: sunrise, dew on the fairway, and a single player walking with a caddie.",
+                  "narrative_arc":  "Move from premium, controlled wide establishers into intimate details that make the morning and the playerâ€™s ritual feel aspirational and tactile.",
+                  "frame_count":  6,
+                  "frame_count_source":  "inferred"
+              },
+    "shoot":  {
+                  "aspect_ratio":  "16:9",
+                  "delivery":  "broadcast pitch frames",
+                  "aspect_ratio_source":  "supplied",
+                  "production_constraints":  [
+                                                 "premium commercial realism",
+                                                 "controlled camera language",
+                                                 "wide establishers into intimate details"
+                                             ]
+              },
+    "scene":  {
+                  "location":  "luxury golf resort and manicured fairway",
+                  "time_of_day":  "sunrise",
+                  "weather":  "clear, calm early morning",
+                  "subjects":  [
+                                   "single golfer",
+                                   "single caddie"
+                               ],
+                  "location_source":  "supplied and inferred"
+              },
+    "style":  {
+                  "rendering_method":  "photorealistic live-action premium commercial realism",
+                  "style_guides":  [
+                                       "clean-pitch-frame",
+                                       "cinematic-realism"
+                                   ],
+                  "palette":  "warm sunrise gold, deep emerald fairway, restrained neutral wardrobe",
+                  "lens_language":  "18mm/35mm establishers into 50mm/85mm intimate detail",
+                  "lighting":  "motivated sunrise backlight with readable shadows and refined highlight separation",
+                  "style_source":  "supplied and inferred"
+              },
+    "creative_constants":  {
+                               "locks":  [
+                                             "16:9 broadcast composition",
+                                             "sunrise continuity and warm directional light",
+                                             "one player and one caddie only",
+                                             "premium controlled commercial realism",
+                                             "emerald fairway and restrained luxury palette",
+                                             "screen direction remains consistent across walking shots"
+                                         ],
+                               "prohibited_elements":  [
+                                                           "crowds or additional golfers",
+                                                           "busy resort activity",
+                                                           "generic stock-photo posing",
+                                                           "excessive bloom or artificial saturation",
+                                                           "illegible branding or unsupported resort claims"
+                                                       ]
+                           },
+    "references":  [
+
+                   ],
+    "frames":  [
+                   {
+                       "frame_id":  "frame-001",
+                       "sequence_number":  1,
+                       "title":  "The Course Wakes",
+                       "description":  "A pristine resort fairway at first light, dew glittering across the foreground, distant clubhouse and tree line softened by morning haze.",
+                       "prompt":  "Photorealistic premium golf resort advertisement pitch frame, 16:9 broadcast composition, extreme wide low establishing view of a pristine emerald fairway at sunrise, dew sparkling across foreground blades, elegant resort clubhouse and tree line in the distance, thin morning haze, warm champagne sunlight from camera-left/back-left, deep readable shadows, controlled contrast, refined cinematic realism, clean negative space, no people, no text, no logos.",
+                       "negative_prompt":  "No crowds, no golfers, no dramatic storm clouds, no excessive bloom, no oversaturated greens, no readable signage, no fantasy architecture.",
+                       "metadata":  {
+                                        "scene_name":  "The Course Wakes",
+                                        "narrative_purpose":  "establishing",
+                                        "subject":  "empty fairway and resort landscape",
+                                        "action":  "sunrise reveals the course",
+                                        "location":  "manicured luxury golf resort fairway",
+                                        "time_of_day":  "sunrise",
+                                        "shot_size":  "extreme wide establishing",
+                                        "camera_angle":  "low, level horizon",
+                                        "camera_height":  "ground level",
+                                        "camera_position":  "fairway edge looking toward rising sun",
+                                        "focal_length_mm":  18,
+                                        "lens_type":  "wide angle",
+                                        "aperture_intent":  "deep environmental focus",
+                                        "depth_of_field":  "deep with atmospheric falloff",
+                                        "camera_movement":  "locked off",
+                                        "camera_support":  "tripod",
+                                        "frame_rate_fps":  23.976,
+                                        "playback_intent":  "normal speed",
+                                        "duration_seconds":  3,
+                                        "transition_to_next":  "slow dissolve or clean cut",
+                                        "lighting":  "warm backlight camera-left/back-left, cool grass shadows",
+                                        "weather":  "clear calm early morning",
+                                        "wardrobe":  [
+
+                                                     ],
+                                        "props":  [
+
+                                                  ],
+                                        "priority":  "must-have",
+                                        "capture_type":  "establishing",
+                                        "assigned_shooter":  "",
+                                        "scheduled_time":  null,
+                                        "reference_type":  "none",
+                                        "reference_path":  "",
+                                        "continuity_notes":  "Empty course; same sunrise direction and emerald palette.",
+                                        "production_notes":  "Keep upper-third clean for pitch readability.",
+                                        "status":  "generated",
+                                        "created_at":  "2026-07-21",
+                                        "updated_at":  "2026-07-21"
+                                    },
+                       "continuity_locks":  [
+                                                "sunrise direction",
+                                                "emerald fairway",
+                                                "empty course",
+                                                "clean upper-third negative space"
+                                            ],
+                       "references":  [
+
+                                      ],
+                       "image_paths":  {
+                                           "contact_sheet":  "iterations/v001/contact-sheet.png",
+                                           "frame":  "iterations/v001/contact-sheet.png",
+                                           "thumbnail":  "iterations/v001/contact-sheet.png"
+                                       },
+                       "revision_history":  [
+
+                                            ]
+                   },
+                   {
+                       "frame_id":  "frame-002",
+                       "sequence_number":  2,
+                       "title":  "Two Figures, One Fairway",
+                       "description":  "A single golfer and caddie enter the long fairway as small, deliberate silhouettes, preserving the courseâ€™s scale and quiet.",
+                       "prompt":  "Photorealistic luxury golf resort commercial pitch frame, 16:9, wide lateral view of exactly one elegant golfer and exactly one caddie walking left-to-right along a dew-covered emerald fairway at sunrise, golfer in cream performance jacket and tailored dark trousers, caddie in refined navy bib and cap carrying one golf bag, resort landscape receding behind them, warm rim light, quiet premium atmosphere, deliberate controlled composition, cinematic realism, generous negative space ahead of their movement, no text or logos.",
+                       "negative_prompt":  "No additional people, no carts, no spectators, no crowded resort, no conflicting screen direction, no generic stock pose, no brand marks.",
+                       "metadata":  {
+                                        "scene_name":  "Two Figures, One Fairway",
+                                        "narrative_purpose":  "introduce subject and action",
+                                        "subject":  "one golfer and one caddie",
+                                        "action":  "walking left-to-right together",
+                                        "location":  "same fairway and distant resort setting",
+                                        "time_of_day":  "sunrise",
+                                        "shot_size":  "wide establishing action",
+                                        "camera_angle":  "slightly elevated",
+                                        "camera_height":  "waist height",
+                                        "camera_position":  "lateral beside fairway",
+                                        "focal_length_mm":  35,
+                                        "lens_type":  "normal wide",
+                                        "aperture_intent":  "figures separated from background",
+                                        "depth_of_field":  "deep",
+                                        "camera_movement":  "slow lateral dolly",
+                                        "camera_support":  "dolly",
+                                        "frame_rate_fps":  23.976,
+                                        "playback_intent":  "normal speed",
+                                        "duration_seconds":  3,
+                                        "transition_to_next":  "match cut on walking direction",
+                                        "lighting":  "sunrise rim light on shoulders and bags",
+                                        "weather":  "clear calm early morning",
+                                        "wardrobe":  [
+                                                         "cream golfer jacket",
+                                                         "dark tailored trousers",
+                                                         "navy caddie bib and cap"
+                                                     ],
+                                        "props":  [
+                                                      "one golf bag"
+                                                  ],
+                                        "priority":  "must-have",
+                                        "capture_type":  "action coverage",
+                                        "assigned_shooter":  "",
+                                        "scheduled_time":  null,
+                                        "reference_type":  "none",
+                                        "reference_path":  "",
+                                        "continuity_notes":  "Exactly one golfer and one caddie; left-to-right travel.",
+                                        "production_notes":  "Preserve space ahead of movement.",
+                                        "status":  "generated",
+                                        "created_at":  "2026-07-21",
+                                        "updated_at":  "2026-07-21"
+                                    },
+                       "continuity_locks":  [
+                                                "one golfer",
+                                                "one caddie",
+                                                "left-to-right travel",
+                                                "same sunrise",
+                                                "same wardrobe"
+                                            ],
+                       "references":  [
+
+                                      ],
+                       "image_paths":  {
+                                           "contact_sheet":  "iterations/v001/contact-sheet.png",
+                                           "frame":  "iterations/v001/contact-sheet.png",
+                                           "thumbnail":  "iterations/v001/contact-sheet.png"
+                                       },
+                       "revision_history":  [
+
+                                            ]
+                   },
+                   {
+                       "frame_id":  "frame-003",
+                       "sequence_number":  3,
+                       "title":  "Dew on the Fairway",
+                       "description":  "Dew beads cling to fine grass while the pairâ€™s softly blurred footsteps pass in the background.",
+                       "prompt":  "Premium photorealistic golf resort advertisement pitch frame, 16:9 macro low-angle detail of dew beads suspended on emerald fairway grass at sunrise, tiny droplets catching warm champagne light, exactly one golfer and one caddie passing as soft elegant blurred shapes in the far background moving left-to-right, restrained contrast, tactile natural texture, refined luxury commercial cinematography, no text, no logos.",
+                       "negative_prompt":  "No giant unrealistic water droplets, no wet muddy turf, no visible extra legs, no artificial sparkle effects, no oversharpening, no text.",
+                       "metadata":  {
+                                        "scene_name":  "Dew on the Fairway",
+                                        "narrative_purpose":  "tactile detail",
+                                        "subject":  "dew-covered fairway grass with distant pair",
+                                        "action":  "dew trembles as pair passes",
+                                        "location":  "same fairway",
+                                        "time_of_day":  "sunrise",
+                                        "shot_size":  "macro detail",
+                                        "camera_angle":  "low grazing angle",
+                                        "camera_height":  "inches above turf",
+                                        "camera_position":  "along walking line",
+                                        "focal_length_mm":  85,
+                                        "lens_type":  "macro telephoto intent",
+                                        "aperture_intent":  "foreground isolation",
+                                        "depth_of_field":  "very shallow",
+                                        "camera_movement":  "minimal slider drift",
+                                        "camera_support":  "slider",
+                                        "frame_rate_fps":  23.976,
+                                        "playback_intent":  "normal speed",
+                                        "duration_seconds":  2,
+                                        "transition_to_next":  "sound-led or graphic match",
+                                        "lighting":  "golden backlight on droplets",
+                                        "weather":  "clear calm early morning",
+                                        "wardrobe":  [
+
+                                                     ],
+                                        "props":  [
+
+                                                  ],
+                                        "priority":  "must-have",
+                                        "capture_type":  "detail",
+                                        "assigned_shooter":  "",
+                                        "scheduled_time":  null,
+                                        "reference_type":  "none",
+                                        "reference_path":  "",
+                                        "continuity_notes":  "Pair remains soft background context, moving left-to-right.",
+                                        "production_notes":  "Avoid synthetic sparkle or oversized droplets.",
+                                        "status":  "generated",
+                                        "created_at":  "2026-07-21",
+                                        "updated_at":  "2026-07-21"
+                                    },
+                       "continuity_locks":  [
+                                                "warm sunrise",
+                                                "same left-to-right movement",
+                                                "natural dew",
+                                                "emerald turf"
+                                            ],
+                       "references":  [
+
+                                      ],
+                       "image_paths":  {
+                                           "contact_sheet":  "iterations/v001/contact-sheet.png",
+                                           "frame":  "iterations/v001/contact-sheet.png",
+                                           "thumbnail":  "iterations/v001/contact-sheet.png"
+                                       },
+                       "revision_history":  [
+
+                                            ]
+                   },
+                   {
+                       "frame_id":  "frame-004",
+                       "sequence_number":  4,
+                       "title":  "The Morning Ritual",
+                       "description":  "The player pauses to settle a glove and check the club while the caddie stands quietly beside the bag.",
+                       "prompt":  "Photorealistic premium golf resort commercial pitch frame, 16:9 intimate three-quarter close-up of an elegant golfer at sunrise tightening a white leather golf glove and selecting a club beside a refined navy golf bag, one caddie softly present just behind, cream performance jacket, tailored dark trousers, warm directional light, polished but natural leather and metal detail, calm focused ritual, shallow depth of field, cinematic realism, no text or logos.",
+                       "negative_prompt":  "No visible extra people, no exaggerated athlete pose, no product branding, no distorted hands, no harsh studio light, no clutter.",
+                       "metadata":  {
+                                        "scene_name":  "The Morning Ritual",
+                                        "narrative_purpose":  "reaction and emotion",
+                                        "subject":  "golfer hands and caddie",
+                                        "action":  "tightens glove and selects club",
+                                        "location":  "fairway edge",
+                                        "time_of_day":  "sunrise",
+                                        "shot_size":  "intimate medium close-up",
+                                        "camera_angle":  "chest-height three-quarter profile",
+                                        "camera_height":  "chest height",
+                                        "camera_position":  "beside golf bag",
+                                        "focal_length_mm":  50,
+                                        "lens_type":  "standard",
+                                        "aperture_intent":  "hands and glove sharp",
+                                        "depth_of_field":  "shallow",
+                                        "camera_movement":  "controlled micro push-in",
+                                        "camera_support":  "dolly",
+                                        "frame_rate_fps":  23.976,
+                                        "playback_intent":  "normal speed",
+                                        "duration_seconds":  2,
+                                        "transition_to_next":  "cut on hand movement",
+                                        "lighting":  "soft warm side light",
+                                        "weather":  "clear calm early morning",
+                                        "wardrobe":  [
+                                                         "cream golfer jacket",
+                                                         "dark tailored trousers",
+                                                         "navy caddie styling"
+                                                     ],
+                                        "props":  [
+                                                      "navy golf bag",
+                                                      "white glove",
+                                                      "golf club"
+                                                  ],
+                                        "priority":  "must-have",
+                                        "capture_type":  "detail",
+                                        "assigned_shooter":  "",
+                                        "scheduled_time":  null,
+                                        "reference_type":  "none",
+                                        "reference_path":  "",
+                                        "continuity_notes":  "Same wardrobe and golf bag; calm ritual.",
+                                        "production_notes":  "Keep product details generic and unbranded.",
+                                        "status":  "generated",
+                                        "created_at":  "2026-07-21",
+                                        "updated_at":  "2026-07-21"
+                                    },
+                       "continuity_locks":  [
+                                                "cream jacket",
+                                                "dark trousers",
+                                                "navy caddie styling",
+                                                "same golf bag"
+                                            ],
+                       "references":  [
+
+                                      ],
+                       "image_paths":  {
+                                           "contact_sheet":  "iterations/v001/contact-sheet.png",
+                                           "frame":  "iterations/v001/contact-sheet.png",
+                                           "thumbnail":  "iterations/v001/contact-sheet.png"
+                                       },
+                       "revision_history":  [
+
+                                            ]
+                   },
+                   {
+                       "frame_id":  "frame-005",
+                       "sequence_number":  5,
+                       "title":  "Into the Light",
+                       "description":  "The player and caddie walk toward a sunlit bend, framed by fairway stripes and sculpted landscaping.",
+                       "prompt":  "Photorealistic luxury golf resort advertisement pitch frame, 16:9 medium-wide tracking composition of exactly one golfer and exactly one caddie walking left-to-right into warm sunrise light along a pristine emerald fairway, golfer in cream jacket and dark tailored trousers, caddie in navy, sculpted trees and elegant resort landscaping framing the route, dew still visible, smooth deliberate premium commercial movement, medium depth of field, restrained lens flare, no text or logos.",
+                       "negative_prompt":  "No extra golfers, no golf cart, no crowds, no overblown sun, no action-sports energy, no inconsistent wardrobe, no brand marks.",
+                       "metadata":  {
+                                        "scene_name":  "Into the Light",
+                                        "narrative_purpose":  "progression",
+                                        "subject":  "golfer and caddie",
+                                        "action":  "walking left-to-right toward fairway opening",
+                                        "location":  "same fairway with sculpted landscaping",
+                                        "time_of_day":  "sunrise",
+                                        "shot_size":  "medium-wide tracking",
+                                        "camera_angle":  "eye-level",
+                                        "camera_height":  "eye level",
+                                        "camera_position":  "gimbal tracking backward",
+                                        "focal_length_mm":  35,
+                                        "lens_type":  "normal wide",
+                                        "aperture_intent":  "both figures and fairway readable",
+                                        "depth_of_field":  "medium",
+                                        "camera_movement":  "smooth backward gimbal",
+                                        "camera_support":  "gimbal",
+                                        "frame_rate_fps":  23.976,
+                                        "playback_intent":  "normal speed",
+                                        "duration_seconds":  4,
+                                        "transition_to_next":  "continue motion or cut",
+                                        "lighting":  "sun through trees, controlled flare",
+                                        "weather":  "clear calm early morning",
+                                        "wardrobe":  [
+                                                         "cream golfer jacket",
+                                                         "dark tailored trousers",
+                                                         "navy caddie styling"
+                                                     ],
+                                        "props":  [
+                                                      "one golf bag"
+                                                  ],
+                                        "priority":  "must-have",
+                                        "capture_type":  "action coverage",
+                                        "assigned_shooter":  "",
+                                        "scheduled_time":  null,
+                                        "reference_type":  "none",
+                                        "reference_path":  "",
+                                        "continuity_notes":  "Left-to-right screen direction remains locked.",
+                                        "production_notes":  "Lens flare must remain restrained and broadcast-safe.",
+                                        "status":  "generated",
+                                        "created_at":  "2026-07-21",
+                                        "updated_at":  "2026-07-21"
+                                    },
+                       "continuity_locks":  [
+                                                "left-to-right direction",
+                                                "same wardrobe and pair",
+                                                "controlled sunrise flare"
+                                            ],
+                       "references":  [
+
+                                      ],
+                       "image_paths":  {
+                                           "contact_sheet":  "iterations/v001/contact-sheet.png",
+                                           "frame":  "iterations/v001/contact-sheet.png",
+                                           "thumbnail":  "iterations/v001/contact-sheet.png"
+                                       },
+                       "revision_history":  [
+
+                                            ]
+                   },
+                   {
+                       "frame_id":  "frame-006",
+                       "sequence_number":  6,
+                       "title":  "A Quiet Advantage",
+                       "description":  "The caddie offers the club; the player accepts it with a small nod as the glowing course falls away behind them.",
+                       "prompt":  "Photorealistic premium golf resort advertisement pitch frame, 16:9 tight intimate detail of exactly one caddie handing a golf club to exactly one elegant golfer at sunrise, hands and club in crisp focus, partial refined profiles at frame edges, warm edge light, soft emerald fairway and golden morning bokeh behind, quiet confident human connection, controlled cinematic realism, clean negative space for a future end card, no text, no logos.",
+                       "negative_prompt":  "No extra hands, no extra people, no distorted anatomy, no visible brand marks, no sentimental exaggeration, no cluttered background.",
+                       "metadata":  {
+                                        "scene_name":  "A Quiet Advantage",
+                                        "narrative_purpose":  "resolution",
+                                        "subject":  "golfer and caddie hands with club",
+                                        "action":  "caddie passes club to player",
+                                        "location":  "fairway opening",
+                                        "time_of_day":  "sunrise",
+                                        "shot_size":  "tight detail with partial profiles",
+                                        "camera_angle":  "shoulder-height three-quarter",
+                                        "camera_height":  "shoulder height",
+                                        "camera_position":  "close on handoff",
+                                        "focal_length_mm":  85,
+                                        "lens_type":  "portrait telephoto",
+                                        "aperture_intent":  "hands and club crisp",
+                                        "depth_of_field":  "selective focus",
+                                        "camera_movement":  "almost static settling motion",
+                                        "camera_support":  "tripod",
+                                        "frame_rate_fps":  23.976,
+                                        "playback_intent":  "normal speed",
+                                        "duration_seconds":  3,
+                                        "transition_to_next":  "hold for future end card",
+                                        "lighting":  "warm edge light and green-gold bokeh",
+                                        "weather":  "clear calm early morning",
+                                        "wardrobe":  [
+                                                         "cream golfer jacket",
+                                                         "dark tailored trousers",
+                                                         "navy caddie styling"
+                                                     ],
+                                        "props":  [
+                                                      "golf club",
+                                                      "one golf bag"
+                                                  ],
+                                        "priority":  "must-have",
+                                        "capture_type":  "resolution",
+                                        "assigned_shooter":  "",
+                                        "scheduled_time":  null,
+                                        "reference_type":  "none",
+                                        "reference_path":  "",
+                                        "continuity_notes":  "Same pair, wardrobe, club, and sunrise.",
+                                        "production_notes":  "Reserve clean negative space for future resort end card.",
+                                        "status":  "generated",
+                                        "created_at":  "2026-07-21",
+                                        "updated_at":  "2026-07-21"
+                                    },
+                       "continuity_locks":  [
+                                                "one golfer and one caddie",
+                                                "same wardrobe and club",
+                                                "calm human gesture",
+                                                "no invented branding"
+                                            ],
+                       "references":  [
+
+                                      ],
+                       "image_paths":  {
+                                           "contact_sheet":  "iterations/v001/contact-sheet.png",
+                                           "frame":  "iterations/v001/contact-sheet.png",
+                                           "thumbnail":  "iterations/v001/contact-sheet.png"
+                                       },
+                       "revision_history":  [
+
+                                            ]
+                   }
+               ],
+    "versions":  [
+                     {
+                         "version_id":  "v001",
+                         "status":  "generated",
+                         "plan_path":  "plans/plan-v001.md",
+                         "prompt_packet_path":  "iterations/v001/prompt-packet.md",
+                         "frames_path":  "iterations/v001/frames.json",
+                         "result_path":  "iterations/v001/result.json",
+                         "changes_path":  "iterations/v001/changes.md",
+                         "review":  {
+                                        "decision":  "approved",
+                                        "plan_version":  1,
+                                        "authorized_for_generation":  true,
+                                        "reviewed_at":  "2026-07-21T20:00:00Z",
+                                        "change_summary":  "User approved plan v001; generation completed."
+                                    },
+                         "created_at":  "2026-07-21T20:00:00Z",
+                         "change_summary":  "Initial six-panel contact sheet generated."
+                     }
+                 ],
+    "exports":  [
+
+                ]
+}
