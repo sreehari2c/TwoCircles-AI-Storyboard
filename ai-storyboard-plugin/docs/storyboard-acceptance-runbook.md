@@ -6,7 +6,8 @@ Use this runbook to verify the complete storyboard flow from a clean project fol
 
 1. Start from a clean project folder with no prior project outputs or chat-dependent state.
 2. Have the supplied soccer production example ready: a sequence spanning a mural, a streetcar, and a high-school field.
-3. Confirm that ChatGPT image generation is available for the contact-sheet request.
+3. Confirm `skills/storyboard/resources/templates/Storyboard_Template.jpg` and `skills/storyboard/resources/templates/Storyboard Example.png` are present. The template is the 12-frame master board; the example is the required art-style reference.
+4. Confirm that ChatGPT image generation is available for the storyboard sheet request.
 
 Record the project slug and use durable files under `storyboard-projects/<project-slug>/` as the source of truth throughout the run.
 
@@ -24,7 +25,7 @@ Expected evidence: `project.json` has status `proposed`, active version `0`, nor
 
 Create an eight-frame plan covering the sequence. Use practical variations in lens, camera movement, frame rate, and shot size; keep production constraints and continuity constants consistent across frames.
 
-Expected evidence: this is the first action that creates `plans/plan-v001.md`. It contains exactly eight identifiable frame records, each with a stable frame ID such as `frame-001` and explicit lens, movement, frame-rate, and shot-size values or intentional defaults; project status is `planned`, and review is `pending` with authorization false.
+Expected evidence: this is the first action that creates `plans/plan-v001.md`. It contains exactly eight identifiable frame records, each with a stable frame ID such as `frame-001` and explicit lens, movement, frame-rate, and shot-size values or intentional defaults. The plan includes template/layout notes naming the 12-frame board and records that the four unused slots stay black. Project status is `planned`, and review is `pending` with authorization false.
 
 ### 3. Review the plan and verify assumptions
 
@@ -32,11 +33,11 @@ Review every frame before generation. Check that approved values are distinguish
 
 Expected evidence: the reviewed `plans/plan-v001.md`, labeled assumptions, and a durable `project.json.review` object. Approval records `decision: approved`; explicit bypass records `decision: bypassed`. Both record `plan_version: 1`, a non-null `reviewed_at`, `authorized_for_generation: true`, and a `change_summary` while status is `review`. Plan edits reset the five fields to pending/unauthorized values and return status to `planned`.
 
-### 4. Generate the contact sheet
+### 4. Generate the storyboard sheet
 
-Request a numbered, low-resolution contact sheet through ChatGPT image generation using the approved eight-frame plan.
+Request a low-resolution storyboard sheet through ChatGPT image generation using the approved eight-frame plan, `Storyboard_Template.jpg` as the layout reference, and `Storyboard Example.png` as the art-style reference.
 
-Expected evidence: initial generation creates all four files: `iterations/v001/prompt-packet.md`, `iterations/v001/frames.json`, `iterations/v001/result.json`, and `iterations/v001/changes.md`. `result.json` contains the numbered contact-sheet reference, while `project.json.frames`, `project.json.versions`, integer `active_version`, and status `generated` agree with v001. The v001 version record contains the same five review fields that authorized generation.
+Expected evidence: initial generation creates all four files: `iterations/v001/prompt-packet.md`, `iterations/v001/frames.json`, `iterations/v001/result.json`, and `iterations/v001/changes.md`. `prompt-packet.md` names both template assets and requires black unused slots. `result.json` contains the storyboard sheet reference, template assets used, and layout decision, while `project.json.frames`, `project.json.versions`, integer `active_version`, and status `generated` agree with v001. The v001 version record contains the same five review fields that authorized generation.
 
 ### 5. Change only the streetcar frame
 
@@ -44,8 +45,8 @@ Request a scoped change to the streetcar frame only, such as adjusting its movem
 
 If frame-level editing is unavailable and there is no compositor, verify the workflow asks for one explicit fallback:
 
-- (a) regenerate the whole contact sheet with unchanged frame prompts locked and a continuity/drift warning;
-- (b) create a frame-only revision artifact while retaining the previous contact sheet; or
+- (a) regenerate the whole storyboard sheet with unchanged frame prompts locked and a continuity/drift warning;
+- (b) create a frame-only revision artifact while retaining the previous storyboard sheet; or
 - (c) update prompts/metadata only with no new image.
 
 Expected evidence: the streetcar frame is the only changed frame; unaffected frame records and prompts remain unchanged. The new immutable `iterations/v###/` folder contains `prompt-packet.md`, `frames.json`, `result.json`, and `changes.md`; both `result.json` and `changes.md` record the capability path or fallback and retained image references.
@@ -82,5 +83,7 @@ Expected evidence: successful reopen without the original chat, with the same pr
 - Verify a failed commit leaves the candidate isolated under `iterations/v###/commit-candidate/` and leaves prior final outputs, status, active version, and export records unchanged.
 - Clear or corrupt durable review authorization and verify a generate request routes back to review without creating an iteration.
 - While status is `review`, request an add/remove/reorder/edit-plan change and verify the review workflow handles it, resets authorization, and returns status to `planned`.
+- Request fewer than 12 frames and verify all unused template slots remain black rather than filled with invented frames.
+- Request more than 12 frames and verify the plan records either multiple storyboard images or a deliberate resized/reflowed layout before generation.
 
 Record pass/fail results, observed artifact paths, and deviations before accepting the task.

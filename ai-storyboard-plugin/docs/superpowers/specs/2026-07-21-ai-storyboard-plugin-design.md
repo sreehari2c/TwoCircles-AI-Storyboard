@@ -38,7 +38,7 @@ Starter guides and templates live under `skills/storyboard/resources/`. Workflow
 
 The portable project store remains at plugin-root `storyboard-projects/<project-slug>/`. Project-local `guides/` override the skill's starter guides, below explicit user instructions and approved project/frame decisions.
 
-The starter guides remain provisional and must not be represented as official Two Circles guidance. Defaults include six frames for a general short concept, eight for the soccer benchmark, 16:9 delivery, 23.976 fps, the 18/25/35/50/85/100mm lens family, and camera movement/support chosen to serve the story.
+The starter guides remain provisional and must not be represented as official Two Circles guidance. Defaults include six frames for a general short concept, eight for the soccer benchmark, 16:9 delivery, 23.976 fps, the 18/25/35/50/85/100mm lens family, and camera movement/support chosen to serve the story. Generated sheets use `resources/templates/Storyboard_Template.jpg` as the 12-frame master board and `resources/templates/Storyboard Example.png` as the required art-style reference.
 
 ## 4. Routing and lifecycle
 
@@ -116,7 +116,7 @@ The plugin prepares a prompt packet for ChatGPT image generation; it does not im
 - `result.json`
 - `changes.md`
 
-Initial generation requests a coherent numbered low-resolution contact sheet. Refinement identifies affected and untouched frame IDs. When frame-only generation is unavailable and no compositor exists, the user chooses whole-sheet regeneration with drift warning, a frame-only artifact retaining the previous sheet, or metadata-only revision. No workflow silently regenerates the whole sequence.
+Initial generation requests a coherent low-resolution storyboard sheet that follows the supplied 12-frame board and art-style reference. For fewer than 12 planned frames, unused slots stay black instead of being filled with invented frames. For more than 12 planned frames, the approved plan chooses multiple storyboard images or a deliberate resized/reflowed layout before generation. Refinement identifies affected and untouched frame IDs. When frame-only generation is unavailable and no compositor exists, the user chooses whole-sheet regeneration with drift warning, a frame-only artifact retaining the previous sheet, or metadata-only revision. No workflow silently regenerates the whole sequence.
 
 ## 8. Portable file layout
 
@@ -153,6 +153,8 @@ Initial generation requests a coherent numbered low-resolution contact sheet. Re
 
 Package validation counts one public `SKILL.md`, eight workflow Markdown files, and the guide/template resources. Root `workflow/`, `guides/`, and `templates/` copies are invalid.
 
+The template resources must include `Storyboard_Template.jpg` and `Storyboard Example.png` so the portable plugin can reproduce the required storyboard layout and sketch style without relying on the original workspace folder.
+
 ## 9. State-consistent commit and export
 
 Commit/export is one transaction:
@@ -176,7 +178,7 @@ The two committed manifests must be byte-for-byte identical. Promotion keeps rol
 
 ## 11. Acceptance runbook
 
-The soccer benchmark imports the mural, streetcar, and high-school-field sequence; builds an eight-frame plan; verifies durable review evidence; generates a contact sheet; changes only the streetcar frame; applies one frame-scoped uploaded reference; inspects immutable history; commits and validates plan, all 45 CSV columns, identical manifests, and image references; then reopens from `storyboard-projects/<project-slug>/` without chat history.
+The soccer benchmark imports the mural, streetcar, and high-school-field sequence; builds an eight-frame plan; verifies durable review evidence; generates a storyboard sheet using the supplied template and example style; confirms the four unused slots remain black; changes only the streetcar frame; applies one frame-scoped uploaded reference; inspects immutable history; commits and validates plan, all 45 CSV columns, identical manifests, and image references; then reopens from `storyboard-projects/<project-slug>/` without chat history.
 
 ## 12. Out of scope
 

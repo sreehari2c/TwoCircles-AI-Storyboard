@@ -28,7 +28,14 @@
   "story": {},
   "shoot": {},
   "scene": {},
-  "style": {},
+  "style": {
+    "default_guide": "resources/guides/styles/two-circles-board-sketch.md",
+    "layout_template": "resources/templates/Storyboard_Template.jpg",
+    "art_style_reference": "resources/templates/Storyboard Example.png",
+    "max_default_frames_per_sheet": 12,
+    "unused_frame_rule": "Leave unused panel slots as black background.",
+    "overflow_frame_rule": "For more than 12 frames, choose multiple storyboard images or a deliberate resized/reflowed layout before generation."
+  },
   "creative_constants": {
     "locks": [],
     "prohibited_elements": []

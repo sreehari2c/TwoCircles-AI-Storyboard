@@ -44,6 +44,9 @@ For requests without a stage verb, route from `project.json.status`: `proposed` 
 
 - Review is enabled by default. `skip review`, `generate immediately`, and `use your defaults` are explicit bypass decisions, not permission inferred from chat history. Record the durable review object before generation.
 - General concepts default to six frames; the soccer benchmark uses eight unless an approved frame count overrides it.
+- All generated storyboard sheets must follow the supplied board assets in `resources/templates/`: use `Storyboard_Template.jpg` as the 12-frame master layout and `Storyboard Example.png` as the required art-style reference.
+- The 12-frame board is the maximum default sheet layout. For fewer than 12 frames, keep unused panel areas as black background instead of inventing filler frames. For more than 12 frames, either resize/reflow frames deliberately or create multiple storyboard images, and record the chosen layout in the prompt packet and result metadata.
+- The default visual treatment is black presentation-board background, bold white storyboard/title text, grayscale pencil-and-ink sketches on subtle paper texture, and short white captions beneath each filled frame.
 - Starter guides under `resources/guides/` are provisional; project-local guides override them.
 - Apply context precedence in this order: latest explicit user instruction, approved frame instruction, approved project plan, project-local guide, plugin starter guide, system inference.
 - Keep supplied, approved, and inferred values distinct. Do not change an approved lock without explicit user choice.
