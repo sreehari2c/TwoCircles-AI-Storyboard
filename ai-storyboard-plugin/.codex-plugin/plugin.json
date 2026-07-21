@@ -1,0 +1,33 @@
+{
+  "name": "two-circles-ai-storyboard",
+  "version": "0.1.0",
+  "description": "A guided AI storyboard workflow for turning creative briefs into production-ready visual plans and shot lists.",
+  "author": {
+    "name": "Two Circles"
+  },
+  "license": "Proprietary",
+  "keywords": [
+    "storyboard",
+    "creative planning",
+    "cinematography",
+    "shot list",
+    "image generation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Two Circles AI Storyboard",
+    "shortDescription": "Plan, review, refine, and export production storyboards.",
+    "longDescription": "A portable, file-based storyboard workflow from creative brief through image-generation handoff and production shot list.",
+    "developerName": "Two Circles",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Turn this creative brief into a storyboard plan.",
+      "Review and refine my current storyboard.",
+      "Export my approved storyboard and shot list."
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "project_id": "project-slug",
+  "storyboard_id": "storyboard-project-slug",
+  "title": "Untitled Storyboard",
+  "schema_version": "0.1.0",
+  "status": "proposed",
+  "status_values": [
+    "proposed",
+    "planned",
+    "review",
+    "generated",
+    "refined",
+    "committed"
+  ],
+  "active_version": 0,
+  "review_decision_values": [
+    "pending",
+    "approved",
+    "bypassed"
+  ],
+  "review": {
+    "decision": "pending",
+    "plan_version": null,
+    "authorized_for_generation": false,
+    "reviewed_at": null,
+    "change_summary": ""
+  },
+  "story": {},
+  "shoot": {},
+  "scene": {},
+  "style": {},
+  "creative_constants": {
+    "locks": [],
+    "prohibited_elements": []
+  },
+  "references": [],
+  "record_contracts": {
+    "frame": {
+      "frame_id": "frame-001",
+      "sequence_number": 1,
+      "title": "",
+      "description": "",
+      "prompt": "",
+      "negative_prompt": "",
+      "metadata": {
+        "scene_name": "",
+        "narrative_purpose": "",
+        "subject": "",
+        "action": "",
+        "location": "",
+        "time_of_day": "",
+        "shot_size": "",
+        "camera_angle": "",
+        "camera_height": "",
+        "camera_position": "",
+        "focal_length_mm": null,
+        "lens_type": "",
+        "aperture_intent": "",
+        "depth_of_field": "",
+        "camera_movement": "",
+        "camera_support": "",
+        "frame_rate_fps": null,
+        "playback_intent": "",
+        "duration_seconds": null,
+        "transition_to_next": "",
+        "lighting": "",
+        "weather": "",
+        "wardrobe": [],
+        "props": [],
+        "priority": "",
+        "capture_type": "must-capture",
+        "assigned_shooter": "",
+        "scheduled_time": null,
+        "reference_type": "none",
+        "reference_path": "",
+        "continuity_notes": "",
+        "production_notes": "",
+        "status": "proposed",
+        "created_at": "",
+        "updated_at": ""
+      },
+      "continuity_locks": [],
+      "references": [],
+      "image_paths": {
+        "contact_sheet": "",
+        "frame": "",
+        "thumbnail": ""
+      },
+      "revision_history": []
+    },
+    "version": {
+      "version_id": "v001",
+      "status": "generated",
+      "plan_path": "plans/plan-v001.md",
+      "prompt_packet_path": "iterations/v001/prompt-packet.md",
+      "frames_path": "iterations/v001/frames.json",
+      "result_path": "iterations/v001/result.json",
+      "changes_path": "iterations/v001/changes.md",
+      "review": {
+        "decision": "approved",
+        "plan_version": 1,
+        "authorized_for_generation": true,
+        "reviewed_at": "",
+        "change_summary": ""
+      },
+      "created_at": "",
+      "change_summary": ""
+    },
+    "export": {
+      "artifact_type": "final-plan",
+      "artifact_path": "final/final-plan.md",
+      "version": 1,
+      "validation_result": "pending",
+      "timestamp": ""
+    }
+  },
+  "frames": [],
+  "versions": [],
+  "exports": []
+}
